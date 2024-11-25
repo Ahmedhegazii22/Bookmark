@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="webfonts/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1 class="py-3 my-3 text-center ">Bookmark</h1>
+
+        <div
+          class="d-flex flex-column justify-content-center align-items-center" id="inputs"
+        >
+          <h2   class="my-2 text-center h3">
+            <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+
+          <div class="w-100 my-3">
+            <label for="bookmarkname" class="form-label">
+              <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="bookmarkName"
+              placeholder="Bookmark Name"
+            />
+          </div>
+          <div class="w-100 my-3">
+            <label for="bookmarkUrl" class="form-label"
+              ><i class="fa-solid fa-link pe-2"></i> Site URL
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="bookmarkUrl"
+              placeholder="Bookmark URL"
+            />
+          </div>
+          <button class="my-3 rounded-2 px-5 py-2 text-center" id="submitBtn">Submit</button>
+        </div>
+
+
+
+
+        <table class="table text-center my-3">
+          <thead>
+            <tr>
+              <th scope="col">index</th>
+              <th scope="col">Website Name	</th>
+              <th scope="col">Visit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody class=" website">
+           
+    
+         
+          </tbody>
+        </table>
+      </div>
+
+      <div
+      id="layer"
+      class=" position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center d-none"
+    >
+      <div class="box-conent bg-white p-4 rounded-2 shadow-lg">
+        <header
+          class="box-header w-100 d-flex justify-content-between align-items-center mb-4"
+        >
+         
+          <button class="btn border-0" id="closeBtn">
+            <i class="fa-solid fa-xmark close fs-3"></i>
+          </button>
+        </header>
+        <p class="m-0 pb-2 fw-bolder">
+          Site Name or Url is not valid, Please follow the rules below :
+        </p>
+        <ul class="rules list-unstyled m-0">
+          <li>
+            <i class="fa-regular fa-circle-right p-2"></i>Site name must
+            contain at least 3 characters
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+            valid one
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
